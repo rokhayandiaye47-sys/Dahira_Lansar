@@ -1,0 +1,112 @@
+/* Theme commun Dahira Lansar Guidick */
+:root {
+    --vert-profond: #0B6B3A;
+    --vert-fonce: #06301A;
+    --vert-clair: #E9F5EE;
+    --vert-texte: #0F3D24;
+    --vert-ligne: #D7E6DC;
+    --blanc: #FFFFFF;
+    --ombre-verte: 0 14px 34px rgba(6, 48, 26, 0.12);
+}
+
+body {
+    background: linear-gradient(135deg, #dcefe3 0%, #f4faf6 48%, #cfe6d8 100%) !important;
+    color: var(--vert-texte) !important;
+}
+
+.conteneur {
+    border-color: var(--vert-ligne) !important;
+    box-shadow: var(--ombre-verte) !important;
+}
+
+h1, h2, h3, h4 {
+    color: var(--vert-fonce) !important;
+}
+
+.carte-profil h1 {
+    color: var(--blanc) !important;
+}
+
+a {
+    color: var(--vert-profond);
+}
+
+button,
+.bouton,
+input[type="submit"],
+input[type="button"] {
+    background: var(--vert-profond);
+    border-color: var(--vert-profond);
+    color: var(--blanc);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.bouton:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: var(--vert-fonce);
+    box-shadow: 0 6px 14px rgba(6, 48, 26, 0.16);
+    transform: translateY(-1px);
+}
+
+input,
+select,
+textarea {
+    border: 1px solid var(--vert-ligne);
+    border-radius: 7px;
+    color: var(--vert-texte);
+    background: var(--blanc);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--vert-profond);
+    outline: 3px solid rgba(11, 107, 58, 0.12);
+}
+
+table th {
+    color: #527061;
+    border-color: var(--vert-ligne);
+}
+
+table td {
+    border-color: #edf5ef;
+}
+
+.onglets a,
+.bouton-gris {
+    background: var(--vert-clair) !important;
+    border-color: var(--vert-ligne) !important;
+    color: var(--vert-fonce) !important;
+}
+
+.onglets a.actif,
+.onglets a:hover {
+    background: var(--vert-profond) !important;
+    color: var(--blanc) !important;
+}
+
+.message,
+.alert,
+.success {
+    border-color: #cfe6da;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+
+    .conteneur {
+        padding: 22px 18px !important;
+        border-radius: 12px !important;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
