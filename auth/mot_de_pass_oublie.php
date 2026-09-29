@@ -156,7 +156,7 @@ unset($_SESSION['message_mdp_oublie']);
 
     <?php endif; ?>
 
-    <form action="traiter_mot_de_passe_oublie.php" method="POST">
+    <form action="traiter_mot_de_pass_oublie.php" method="POST">
 
         <div class="champ">
             <label for="email">Email</label>

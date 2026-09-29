@@ -841,12 +841,12 @@ if (isset($_SESSION['id_utilisateur'])) {
 
                 <div class="bloc-contact">
                     <div class="titre-contact">Téléphone</div>
-                    <div class="valeur-contact">[Numéro à compléter]</div>
+                    <div class="valeur-contact">+221 77 539 34 26</div>
                 </div>
 
                 <div class="bloc-contact">
                     <div class="titre-contact">Email</div>
-                    <div class="valeur-contact">[Email à compléter]</div>
+                    <div class="valeur-contact">contact@dahira-lansar-guidick.org</div>
                 </div>
 
                 <div class="bloc-contact">

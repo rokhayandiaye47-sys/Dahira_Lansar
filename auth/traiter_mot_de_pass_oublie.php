@@ -6,7 +6,7 @@ require_once "../config/database.php";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
-    header("Location: mot_de_passe_oublie.php");
+    header("Location: mot_de_pass_oublie.php");
     exit;
 }
 
@@ -24,7 +24,7 @@ $_SESSION['message_mdp_oublie'] = "Si cet email correspond à un compte, la pers
 
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
-    header("Location: mot_de_passe_oublie.php");
+    header("Location: mot_de_pass_oublie.php");
     exit;
 }
 
@@ -61,7 +61,7 @@ $utilisateur = $requete->fetch();
 
 if (!$utilisateur) {
 
-    header("Location: mot_de_passe_oublie.php");
+    header("Location: mot_de_pass_oublie.php");
     exit;
 }
 
@@ -146,5 +146,5 @@ $connexion->prepare("
     ':objet' => "Mot de passe réinitialisé pour $nomComplet (demande via 'mot de passe oublié')"
 ]);
 
-header("Location: mot_de_passe_oublie.php");
+header("Location: mot_de_pass_oublie.php");
 exit;

@@ -185,7 +185,7 @@ unset($_SESSION['message']);
     </form>
 
     <a class="lien-retour" href="../accueil.php">← Retour à l'accueil</a>
-    <a class="lien-retour" href="mot_de_passe_oublie.php" style="margin-top:8px;">
+    <a class="lien-retour" href="mot_de_pass_oublie.php" style="margin-top:8px;">
         Mot de passe oublié ?
     </a>
 </div>
