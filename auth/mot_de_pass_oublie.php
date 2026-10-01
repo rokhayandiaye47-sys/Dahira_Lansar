@@ -1,10 +1,3 @@
-<?php
-
-require_once "protection.php";
-
-?>
-<?php
-
 session_start();
 
 $message = $_SESSION['message_mdp_oublie'] ?? '';
